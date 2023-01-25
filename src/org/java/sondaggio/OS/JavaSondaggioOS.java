@@ -7,12 +7,12 @@ public class JavaSondaggioOS {
 	static int total = windows + mac + linus;
 	public static void main(String[] args) {
 		
-		double average_mac = (double) (mac * 100) / total;
-		System.out.println("La percentuale di utenti Mac è del: " + average_mac + "%");
-		double average_windows = (double) (windows * 100) / total;
-		System.out.println("La percentuale di utenti Windows è del: " + average_windows + "%");	
-		double average_linus = (double) (linus * 100) / total;
-		System.out.println("La percentuale di utenti Linus è del: " + average_linus + "%");	
+		double averageMac = (double) (mac * 100) / total;
+		System.out.println("La percentuale di utenti Mac è del: " + averageMac + "%");
+		double averageWindows = (double) (windows * 100) / total;
+		System.out.println("La percentuale di utenti Windows è del: " + averageWindows + "%");	
+		double averageLinus = (double) (linus * 100) / total;
+		System.out.println("La percentuale di utenti Linus è del: " + averageLinus + "%");	
 		
 	}
 }

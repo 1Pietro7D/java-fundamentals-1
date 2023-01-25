@@ -7,9 +7,9 @@ public class PasswordGenerator {
 	static String name;
 	static String lastname;
 	static String favoriteColor;
-	static short day_of_birth;
-	static short month_of_birth;
-	static short year_of_birth;
+	static short dayBirth;
+	static short monthBirth;
+	static short yearBirth;
 
 	public static void main(String[] args) {
 		// SCANNER
@@ -21,13 +21,13 @@ public class PasswordGenerator {
 		System.out.print("favourite color?");
 		favoriteColor = sc.nextLine();
 		System.out.print("day of birth?");
-		day_of_birth = sc.nextShort();
+		dayBirth = sc.nextShort();
 		System.out.print("month of birth?");
-		month_of_birth = sc.nextShort();
+		monthBirth = sc.nextShort();
 		System.out.print("year of birth?");
-		year_of_birth = sc.nextShort();
+		yearBirth = sc.nextShort();
 		sc.close();
-		Short[] DOB = { day_of_birth, month_of_birth, year_of_birth };
+		Short[] DOB = { dayBirth, monthBirth, yearBirth };
 		System.out.print(name + "-" + lastname + "-" + favoriteColor);
 		for (short n : DOB) {
 			System.out.print("-");
