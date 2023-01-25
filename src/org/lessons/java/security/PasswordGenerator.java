@@ -1,5 +1,7 @@
 package org.lessons.java.security;
 
+import java.util.Scanner;
+
 public class PasswordGenerator {
 	
 	static String name;
@@ -12,10 +14,20 @@ public class PasswordGenerator {
 	//Short[] DOB = {day_of_birth,month_of_birth,year_of_birth};
 
 		public static void main(String[] args) {
+		/*
 		year_of_birth=2000;
 		Short[] DOB = {day_of_birth,month_of_birth,year_of_birth};
-		System.out.println(DOB[2]); // first test
-		
+		System.out.println(DOB[2]); // first test */
+		//SCANNER
+		Scanner sc= new Scanner(System.in);
+		System.out.print("name?");
+		name = sc.nextLine();
+		System.out.print("lastname?");
+		lastname = sc.nextLine();
+		System.out.print("favourite color?");
+		favoriteColor = sc.nextLine();
+		sc.close();
+		System.out.println(name+"-"+lastname+"-"+favoriteColor);
 	}
 }
 
