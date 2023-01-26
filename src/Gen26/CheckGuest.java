@@ -1,5 +1,6 @@
 package Gen26;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CheckGuest {
@@ -13,18 +14,12 @@ public class CheckGuest {
 		String username = s.nextLine();
 		s.close();
 
-		boolean check = false;
-
-		for (String partecipant : partecipants) {
-			if (partecipant.equals(username.trim())) {
-				check = true;
-				break;
-			}
-		}
-		if (!check)
-			System.out.println("You can't enter");
-		else
+		if (Arrays.asList(partecipants).contains(username)) {
 			System.out.println("You are welcome");
+		} else {
+			System.out.println("You can't enter");
+
+		}
 
 	}
 
