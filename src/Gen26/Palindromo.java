@@ -28,9 +28,8 @@ public class Palindromo {
 		    //If maxPalindrome is greater than i*999, exit the outer loop
 		    if (maxPalindrome > i * 999) break;
 		}
-
 		//Print the result
-		System.out.println("The largest palindrome made from the product of two 3-digit numbers is: " + maxPalindrome);
+		System.out.printf("The largest palindrome made from the product of two 3-digit numbers is: %d ", maxPalindrome);
 	}
 
 }
