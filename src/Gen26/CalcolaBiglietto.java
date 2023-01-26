@@ -13,12 +13,15 @@ public class CalcolaBiglietto {
 		double userKm = Double.parseDouble(sc.nextLine().replace(",", "."));
 		System.out.print("how old are you? -> ");
 		int age = Integer.parseInt(sc.nextLine());
+		sc.close();
 		
 		double priceTicket = 0.21d;
 		
 		System.out.println(userKm);
 		System.out.println(age);
 		System.out.println(priceTicket);
+		
+		
 	}
 
 }
